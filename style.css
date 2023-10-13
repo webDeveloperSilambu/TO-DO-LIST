@@ -1,0 +1,112 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    background: none;
+    box-sizing: border-box;
+}
+:root{
+    --white:#fff;
+}
+body{
+    background-color: #7209b7;
+}
+button{
+    cursor: pointer;
+}
+.container{
+    padding: 5rem 15%;
+}
+.container .input-box{
+    padding: 12px 10px;
+    background-color: #000;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+}
+.container .input-box input{
+    width: 100%;
+    padding: 10px 15px;
+    background-color:  rgba(255, 255, 255, 0.1);
+    color:var(--white);
+    font-size: 1.3rem;
+    border-radius: 7px;
+    margin-right: 10px;
+}
+.container .input-box input:focus{
+    border: 1px solid  #7209b7;
+}
+.container .input-box button{
+    display: block;
+	margin: 0 .3rem;
+	border-radius: 50%;
+	font-size: 1.3rem;
+	color: #e5e5e5;
+	min-width: 40px;
+	height: 40px;
+	cursor: pointer;
+	border: 2px solid #000;
+	position: relative;
+}
+
+.container .input-box button:hover{
+     background: rgba(255, 255, 255, 0.1);
+    transform: scale(.9);
+}
+.container .list-items{
+    text-align: center;
+    margin-top: 1rem;
+    background-color: #000;
+    padding: 10px;
+    border-radius: 10px;
+}
+.container .list-items h3{
+    color: var(--white);
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.container .list-items li{
+    font-size: 1.4rem;
+    color: var(--white);
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 7px;
+}
+.container .list-items li button{
+    color: var(--white);
+    font-size: 1.4rem;
+}
+
+footer{
+    text-align: center;
+    padding: 10% 15%;
+    color: var(--white);
+    text-transform: capitalize;
+}
+footer span{
+    text-transform: uppercase;
+    color: yellow;
+}
+
+
+
+
+
+@media(max-width:700px){
+    html{
+        font-size: 80%;
+    }
+    .container{
+        padding: 4rem 5%;
+    }
+    .container .input-box input{
+        margin-right: 2px;
+    }
+}
